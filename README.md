@@ -41,7 +41,7 @@ This portfolio is designed to:
 If you’d like to collaborate or discuss Shopify projects:
 
 - LinkedIn: [https://linkedin.com/aadrashmehta]  
-- Email: [mailto:mehta.aadrash05@gmail.com]  
+- Email: [mehta.aadrash05@gmail.com]  
 
 ## 📂 Project Structure
 
