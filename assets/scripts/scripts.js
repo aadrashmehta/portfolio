@@ -22,6 +22,14 @@ logo.addEventListener("click", function (e) {
   });
 });
 
+const contact = document.querySelector('.contact-mobile')
+contact.addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector(this.getAttribute("href")).scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
 // --- ANIMATION OBSERVER ---
 // This detects when elements enter the screen and adds the 'active' class
 const observerOptions = {

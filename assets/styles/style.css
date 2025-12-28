@@ -133,7 +133,7 @@ ul {
 }
 
 /* --- NAVIGATION --- */
-nav {
+header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -663,7 +663,9 @@ button.carousel-btn.next {
     margin: 0 auto;
   }
 }
-
+.contact-mobile {
+  display: none;
+}
 
 
 
@@ -690,10 +692,28 @@ button.carousel-btn.next {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .hero {
     background-size: cover;
     background-image: url(../images/Designer-single.jpg);
     background-image: unset;
   }
+  .contact-mobile {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-utils {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .contact-mobile svg {
+    width: 21px;
+    height: 21px;
+  }
+  .contact-mobile svg path {
+    stroke: #ffd000;
+  }
+
 }
