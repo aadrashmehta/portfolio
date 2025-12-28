@@ -9,10 +9,16 @@
       content="Portfolio of Aadrash Mehta, Senior Shopify Developer specializing in OS 2.0, Migrations, and High-Performance E-commerce."
     />
 
+    <!-- Favicons -->
+    <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="style.css" rel="stylesheet"/>
+    <link href="./assets/styles/style.css" rel="stylesheet"/>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@700&display=swap"
@@ -24,19 +30,27 @@
   <body>
     <nav>
       <div class="container nav-container">
-        <a href="#" class="logo">Aadrash<span>.</span></a>
+        <a href="/" class="logo">Aadrash<span>.</span></a>
         <div class="hamburger" onclick="toggleMenu()">☰</div>
         <div class="nav-links">
           <a href="#about" onclick="toggleMenu()">About</a>
           <a href="#skills" onclick="toggleMenu()">Skills</a>
           <a href="#experience" onclick="toggleMenu()">Experience</a>
           <a href="#projects" onclick="toggleMenu()">Projects</a>
-          <a href="#contact" onclick="toggleMenu()">Contact</a>
+          <a href="#highlights" onclick="toggleMenu()">Career Highlights</a>
+          <a href="#contact" onclick="toggleMenu()">Contact</a> 
         </div>
       </div>
     </nav>
 
-    <section class="hero" id="about">
+    <section class="hero" id="intro">
+      <div class="bg-video-portrait">
+        <video preload="metadata" poster="./assets/images/bg-video.png" playsinline autoplay muted loop>
+          <source src="./assets/videos/bg.mp4" type="video/mp4">
+          <source src="./assets/videos/bg.webm" type="video/webm">
+          <source src="./assets/videos/bg.h264" type="video/h264">
+        </video>
+      </div>
       <div class="container hero-content">
         <p
           class="hero-intro"
@@ -47,7 +61,7 @@
         <h1>Aadrash Mehta</h1>
         <h2>
           Senior Software Engineer & <br />
-          <span>Shopify Solutions Architect</span>
+          <span>Shopify Expert</span>
         </h2>
         <p
           class="hero-desc"
@@ -65,6 +79,44 @@
         </div>
       </div>
     </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-me">
+      <div class="container about-container">
+        <div class="about-image reveal">
+          <img
+            src="./assets/images/aadrash.jpg"
+            alt="Aadrash Mehta - Senior Shopify Architect"
+          />
+        </div>
+
+        <div class="about-content reveal">
+          <h2 class="section-title">About Me</h2>
+
+          <div class="section-about-me-description">
+            <p>
+              I’m Aadrash Mehta, a <span class="highlight">Shopify Expert</span> with 8+ years of hands-on
+              experience building, scaling, and optimizing Shopify and Shopify Plus
+              stores for growing and enterprise brands.
+            </p>
+  
+            <p>
+              My work sits at the intersection of clean architecture and business
+              outcomes. I focus on performance, maintainability, and conversion, not
+              quick fixes. From large-scale migrations to OS 2.0 rebuilds and custom
+              app integrations, I care deeply about doing things the right way.
+            </p>
+  
+            <p>
+              I enjoy breaking down complex problems, mentoring teams, and turning
+              messy requirements into reliable, scalable systems that merchants can
+              trust long term.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <section id="skills" class="skills">
       <div class="container">
@@ -231,6 +283,97 @@
       </div>
     </section>
 
+    <section id="highlights" class="websites">
+      <div class="container">
+        <h2 class="section-title reveal">Websites I’ve Built</h2>
+
+        <div class="carousel reveal">
+          <button class="carousel-btn prev" aria-label="Previous slide">
+            ‹
+          </button>
+
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img
+                src="./assets/images/websites/twpm.png"
+                alt="twpclothing"
+              />
+              <h3>Luxury Fashion Store</h3>
+              <p>
+                Custom Shopify Plus storefront with OS 2.0 architecture,
+                advanced metafields, and mobile-first performance optimization.
+              </p>
+            </div>
+
+            <div class="carousel-slide">
+              <img
+                src="./assets/images/websites/blvck.png"
+                alt="BLVCK"
+              />
+              <h3>All-Black Luxury Lifestyle</h3>
+              <p>
+                Crafted a sleek Shopify storefront that reflects its refined 
+                all-black philosophy through minimalist design, premium aesthetics, and smooth performance.
+              </p>
+            </div>
+
+            <div class="carousel-slide">
+              <img
+                src="./assets/images/websites/hellobonafide.png"
+                alt="hellobonafide"
+              />
+              <h3>Women Health & Wellness Brand</h3>
+              <p>
+                High-conversion theme with custom sections, recipe metaobjects,
+                and optimized checkout.
+              </p>
+            </div>
+
+            <div class="carousel-slide">
+              <img
+                src="./assets/images/websites/teveo.png"
+                alt="TEVEO"
+              />
+              <h3>Sportswear Brand</h3>
+              <p>
+                Performance-focused Shopify build achieving 80+ PageSpeed scores
+                with lean Liquid and deferred JavaScript.
+              </p>
+            </div>
+
+            <div class="carousel-slide">
+              <img
+                src="./assets/images/websites/amlachai.png"
+                alt="amlachai"
+              />
+              <h3>Indian Authentic Tea Brand</h3>
+              <p>
+                Built focusing on clean visuals, smooth navigation, and a fast, 
+                reliable shopping experience
+              </p>
+            </div>
+
+            <div class="carousel-slide">
+              <img
+                src="./assets/images/websites/anastasiabeverlyhills.png"
+                alt="anastasiabeverlyhills"
+              />
+              <h3>Prestige Makeup Brand</h3>
+              <p>
+                Built and optimized the storefront with a focus on performance, 
+                precision UI, and a seamless luxury shopping experience
+              </p>
+            </div>
+
+
+
+          </div>
+
+          <button class="carousel-btn next" aria-label="Next slide">›</button>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="contact">
       <div class="container">
         <h2 class="section-title reveal">Get In Touch</h2>
@@ -241,9 +384,9 @@
             bring value to your engineering team.
           </p>
           <a
-            href="mailto:mehta.aadrash05@gmail.com?subject=Portfolio%20Inquiry"
-            class="btn"
-            >Say Hello</a
+            href="https://forms.gle/3Nj6Sw23pZZKCwTq8"
+            class="btn" target="_blank"
+            >Contact</a
           >
           <div style="margin-top: 2rem; color: var(--text-secondary)">
             <p>📍 <a href="https://www.google.com/maps/place/Paonta+Sahib,+Himachal+Pradesh/" target="_blank">Himachal Pradesh, India</a></p>
@@ -255,10 +398,10 @@
 
     <footer>
       <div class="container">
-        <p>Designed & Built by Aadrash Mehta. © 2025</p>
+        <p>Designed & Built by Aadrash Mehta. © <span class="copyright-year">2025</span></p>
       </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="./assets/scripts/scripts.js"></script>
   </body>
 </html>
