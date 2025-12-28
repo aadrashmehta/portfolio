@@ -46,6 +46,34 @@ ul {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  word-wrap: normal !important;
+}
+.skip-to-content-link.btn {
+  background: #222;
+  padding: 0.8rem 1.5rem;
+}
+.skip-to-content-link.btn:focus, .skip-to-content-link.btn:focus-visible {
+  outline: .2rem solid rgba(18,18,18, .5);
+  box-shadow: 0 0 0 .3rem rgb(255,255,255), 0 0 .5rem .4rem rgba(18,18,18, .3);
+}
+.skip-to-content-link:focus {
+  z-index: 9999;
+  position: inherit;
+  overflow: auto;
+  width: auto;
+  height: auto;
+  clip: auto;
+}
+
 /* --- UTILITIES --- */
 .container {
   max-width: 1100px;

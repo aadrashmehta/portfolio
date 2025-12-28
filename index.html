@@ -28,6 +28,9 @@
    
   </head>
   <body>
+    <a class="skip-to-content-link btn visually-hidden" href="#MainContent">
+      Skip to content
+    </a>
     <header>
       <div class="container nav-container">
         <a href="/" class="logo">Aadrash<span>.</span></a>
@@ -47,359 +50,361 @@
         </div>
       </div>
     </header>
-
-    <section class="hero" id="intro">
-      <div class="bg-video-portrait">
-        <video preload="metadata" poster="./assets/images/bg-video.png" playsinline autoplay muted loop>
-          <source src="./assets/videos/bg.mp4" type="video/mp4">
-          <source src="./assets/videos/bg.webm" type="video/webm">
-          <source src="./assets/videos/bg.h264" type="video/h264">
-        </video>
-      </div>
-      <div class="container hero-content">
-        <p
-          class="hero-intro"
-          style="color: var(--accent); letter-spacing: 2px; margin-bottom: 1rem"
-        >
-          HELLO, I AM
-        </p>
-        <h1>Aadrash Mehta</h1>
-        <h2>
-          Senior Software Engineer & <br />
-          <span>Shopify Expert</span>
-        </h2>
-        <p
-          class="hero-desc"
-          style="
-            color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto 2rem auto;
-          "
-        >
-          Specializing in Enterprise Migrations, Online Store 2.0 Architecture,
-          and High-Performance Liquid Development.
-        </p>
-        <div class="hero-btn-wrapper">
-          <a href="#contact" class="btn">Get In Touch</a>
+    
+    <main id="MainContent">
+      <section class="hero" id="intro">
+        <div class="bg-video-portrait">
+          <video preload="metadata" poster="./assets/images/bg-video.png" playsinline autoplay muted loop>
+            <source src="./assets/videos/bg.mp4" type="video/mp4">
+            <source src="./assets/videos/bg.webm" type="video/webm">
+            <source src="./assets/videos/bg.h264" type="video/h264">
+          </video>
         </div>
-      </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about" class="about-me">
-      <div class="container about-container">
-        <div class="about-image reveal">
-          <img
-            src="./assets/images/aadrash.jpg"
-            alt="Aadrash Mehta - Senior Shopify Architect"
-          />
-        </div>
-
-        <div class="about-content reveal">
-          <h2 class="section-title">About Me</h2>
-
-          <div class="section-about-me-description">
-            <p>
-              I’m Aadrash Mehta, a <span class="highlight">Shopify Expert</span> with 8+ years of hands-on
-              experience building, scaling, and optimizing Shopify and Shopify Plus
-              stores for growing and enterprise brands.
-            </p>
-  
-            <p>
-              My work sits at the intersection of clean architecture and business
-              outcomes. I focus on performance, maintainability, and conversion, not
-              quick fixes. From large-scale migrations to OS 2.0 rebuilds and custom
-              app integrations, I care deeply about doing things the right way.
-            </p>
-  
-            <p>
-              I enjoy breaking down complex problems, mentoring teams, and turning
-              messy requirements into reliable, scalable systems that merchants can
-              trust long term.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="skills" class="skills">
-      <div class="container">
-        <h2 class="section-title reveal">Technical Expertise</h2>
-
-        <div class="skills-container">
-          <div class="skill-box reveal stagger-1">Shopify (Liquid)</div>
-          <div class="skill-box reveal stagger-2">Shopify App Dev</div>
-          <div class="skill-box reveal stagger-3">React</div>
-          <div class="skill-box reveal stagger-4">GraphQL</div>
-          <div class="skill-box reveal stagger-5">JavaScript</div>
-          <div class="skill-box reveal stagger-6">Node.js</div>
-          <div class="skill-box reveal stagger-7">HTML &amp; CSS</div>
-          <div class="skill-box reveal stagger-8">REST APIs</div>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-card reveal stagger-1">
-            <h3>Core Shopify</h3>
-            <ul>
-              <li>Shopify Plus & CLI</li>
-              <li>Advanced Liquid Templating</li>
-              <li>Online Store 2.0 (OS 2.0)</li>
-              <li>Checkout Extensibility</li>
-            </ul>
-          </div>
-          <div class="skill-card reveal stagger-2">
-            <h3>Front-End Architecture</h3>
-            <ul>
-              <li>JavaScript (ES6+) & jQuery</li>
-              <li>HTML5, CSS3, SCSS</li>
-              <li>Vue.js (Interactive UI)</li>
-              <li>JSON Templates & Schema</li>
-            </ul>
-          </div>
-          <div class="skill-card reveal stagger-3">
-            <h3>Advanced Solutions</h3>
-            <ul>
-              <li>Metafields & Metaobjects</li>
-              <li>Platform Migrations (Woo/Magento)</li>
-              <li>Site Speed Optimization (CWV)</li>
-              <li>SEO Structure & 301 Mapping</li>
-            </ul>
-          </div>
-          <div class="skill-card reveal stagger-4">
-            <h3>Current Learning</h3>
-            <ul>
-              <li>React.js & Remix Framework</li>
-              <li>Shopify GraphQL APIs</li>
-              <li>MongoDB</li>
-              <li>Headless Architecture</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="experience">
-      <div class="container">
-        <h2 class="section-title reveal">Professional Journey</h2>
-        <div class="timeline">
-          <div class="timeline-item reveal">
-            <span class="company">Revyrie Global</span>
-            <h3 class="job-title">Senior Software Engineer</h3>
-            <span class="date">Jan 2024 - Present</span>
-            <ul class="job-desc">
-              <li>
-                Spearheaded transition of legacy themes to
-                <strong>Online Store 2.0</strong>, utilizing Metaobjects for
-                dynamic content management.
-              </li>
-              <li>
-                Optimized client stores to achieve
-                <strong>90+ Mobile PageSpeed</strong> scores via critical CSS
-                and JS refactoring.
-              </li>
-              <li>
-                Led code reviews and technical planning for remote agile teams.
-              </li>
-            </ul>
-          </div>
-
-          <div class="timeline-item reveal">
-            <span class="company">Rootsyntax Technologies</span>
-            <h3 class="job-title">Software Engineer</h3>
-            <span class="date">Sep 2020 - Dec 2023</span>
-            <ul class="job-desc">
-              <li>
-                Managed end-to-end
-                <strong>migrations for 15+ large-scale stores</strong> from
-                WordPress to Shopify with zero data loss.
-              </li>
-              <li>
-                Implemented complex B2B logic and custom pricing tiers using
-                Liquid and AJAX.
-              </li>
-              <li>
-                Acted as primary technical lead for high-value client accounts.
-              </li>
-            </ul>
-          </div>
-
-          <div class="timeline-item reveal">
-            <span class="company">Tech Striker</span>
-            <h3 class="job-title">Web Developer</h3>
-            <span class="date">Nov 2017 - Aug 2020</span>
-            <ul class="job-desc">
-              <li>
-                Developed and launched 50+ custom Shopify themes from PSD/Figma
-                designs.
-              </li>
-              <li>
-                Integrated third-party payment gateways and troubleshoot webhook
-                failures.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <div class="container">
-        <h2 class="section-title reveal">Key Projects</h2>
-        <div class="project-grid">
-          <div class="project-card reveal stagger-1">
-            <div class="project-content">
-              <div class="project-tags">MIGRATION • DATA INTEGRITY</div>
-              <h3 class="project-title">Enterprise Platform Migration</h3>
-              <p class="project-desc">
-                Executed a zero-downtime migration for a high-volume retailer
-                moving from WooCommerce to Shopify Plus. Scripted custom data
-                mapping for 5,000+ SKUs and maintained SEO rankings via
-                extensive 301 redirects.
-              </p>
-            </div>
-          </div>
-
-          <div class="project-card reveal stagger-2">
-            <div class="project-content">
-              <div class="project-tags">METAOBJECTS • ARCHITECTURE</div>
-              <h3 class="project-title">Dynamic Recipe System</h3>
-              <p class="project-desc">
-                Engineered a custom content system using native Shopify
-                Metaobjects to create relational databases (Recipes linked to
-                Ingredients/Products) within the admin, saving the client
-                monthly app fees.
-              </p>
-            </div>
-          </div>
-
-          <div class="project-card reveal stagger-3">
-            <div class="project-content">
-              <div class="project-tags">PERFORMANCE • LIQUID</div>
-              <h3 class="project-title">Core Web Vitals Overhaul</h3>
-              <p class="project-desc">
-                Refactored a heavy legacy theme, reducing LCP (Largest
-                Contentful Paint) from 3.5s to 1.2s and blocking render-blocking
-                resources, resulting in a 12% uplift in mobile conversion rates.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="highlights" class="websites">
-      <div class="container">
-        <h2 class="section-title reveal">Websites I’ve Built</h2>
-
-        <div class="carousel reveal">
-          <button class="carousel-btn prev" aria-label="Previous slide">
-            ‹
-          </button>
-
-          <div class="carousel-track">
-            <div class="carousel-slide">
-              <img
-                src="./assets/images/websites/twpm.png"
-                alt="twpclothing"
-              />
-              <h3>Luxury Fashion Store</h3>
-              <p>
-                Custom Shopify Plus storefront with OS 2.0 architecture,
-                advanced metafields, and mobile-first performance optimization.
-              </p>
-            </div>
-
-            <div class="carousel-slide">
-              <img
-                src="./assets/images/websites/blvck.png"
-                alt="BLVCK"
-              />
-              <h3>All-Black Luxury Lifestyle</h3>
-              <p>
-                Crafted a sleek Shopify storefront that reflects its refined 
-                all-black philosophy through minimalist design, premium aesthetics, and smooth performance.
-              </p>
-            </div>
-
-            <div class="carousel-slide">
-              <img
-                src="./assets/images/websites/hellobonafide.png"
-                alt="hellobonafide"
-              />
-              <h3>Women Health & Wellness Brand</h3>
-              <p>
-                High-conversion theme with custom sections, recipe metaobjects,
-                and optimized checkout.
-              </p>
-            </div>
-
-            <div class="carousel-slide">
-              <img
-                src="./assets/images/websites/teveo.png"
-                alt="TEVEO"
-              />
-              <h3>Sportswear Brand</h3>
-              <p>
-                Performance-focused Shopify build achieving 80+ PageSpeed scores
-                with lean Liquid and deferred JavaScript.
-              </p>
-            </div>
-
-            <div class="carousel-slide">
-              <img
-                src="./assets/images/websites/amlachai.png"
-                alt="amlachai"
-              />
-              <h3>Indian Authentic Tea Brand</h3>
-              <p>
-                Built focusing on clean visuals, smooth navigation, and a fast, 
-                reliable shopping experience
-              </p>
-            </div>
-
-            <div class="carousel-slide">
-              <img
-                src="./assets/images/websites/anastasiabeverlyhills.png"
-                alt="anastasiabeverlyhills"
-              />
-              <h3>Prestige Makeup Brand</h3>
-              <p>
-                Built and optimized the storefront with a focus on performance, 
-                precision UI, and a seamless luxury shopping experience
-              </p>
-            </div>
-
-
-
-          </div>
-
-          <button class="carousel-btn next" aria-label="Next slide">›</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title reveal">Get In Touch</h2>
-        <div class="reveal">
-          <p>
-            Currently open for <strong>Senior Technical Lead</strong> and
-            <strong>Shopify Architect</strong> roles. Let's discuss how I can
-            bring value to your engineering team.
-          </p>
-          <a
-            href="https://forms.gle/3Nj6Sw23pZZKCwTq8"
-            class="btn" target="_blank"
-            >Contact</a
+        <div class="container hero-content">
+          <p
+            class="hero-intro"
+            style="color: var(--accent); letter-spacing: 2px; margin-bottom: 1rem"
           >
-          <div style="margin-top: 2rem; color: var(--text-secondary)">
-            <p>📍 <a href="https://www.google.com/maps/place/Paonta+Sahib,+Himachal+Pradesh/" target="_blank">Himachal Pradesh, India</a></p>
-            <p>📞 <a href="tel:917018604721">+91 7018604721</a></p>
+            HELLO, I AM
+          </p>
+          <h1>Aadrash Mehta</h1>
+          <h2>
+            Senior Software Engineer & <br />
+            <span>Shopify Expert</span>
+          </h2>
+          <p
+            class="hero-desc"
+            style="
+              color: var(--text-secondary);
+              max-width: 600px;
+              margin: 0 auto 2rem auto;
+            "
+          >
+            Specializing in Enterprise Migrations, Online Store 2.0 Architecture,
+            and High-Performance Liquid Development.
+          </p>
+          <div class="hero-btn-wrapper">
+            <a href="#contact" class="btn">Get In Touch</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+  
+      <!-- About Me Section -->
+      <section id="about" class="about-me">
+        <div class="container about-container">
+          <div class="about-image reveal">
+            <img
+              src="./assets/images/aadrash.jpg"
+              alt="Aadrash Mehta - Senior Shopify Architect"
+            />
+          </div>
+  
+          <div class="about-content reveal">
+            <h2 class="section-title">About Me</h2>
+  
+            <div class="section-about-me-description">
+              <p>
+                I’m Aadrash Mehta, a <span class="highlight">Shopify Expert</span> with 8+ years of hands-on
+                experience building, scaling, and optimizing Shopify and Shopify Plus
+                stores for growing and enterprise brands.
+              </p>
+    
+              <p>
+                My work sits at the intersection of clean architecture and business
+                outcomes. I focus on performance, maintainability, and conversion, not
+                quick fixes. From large-scale migrations to OS 2.0 rebuilds and custom
+                app integrations, I care deeply about doing things the right way.
+              </p>
+    
+              <p>
+                I enjoy breaking down complex problems, mentoring teams, and turning
+                messy requirements into reliable, scalable systems that merchants can
+                trust long term.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+  
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2 class="section-title reveal">Technical Expertise</h2>
+  
+          <div class="skills-container">
+            <div class="skill-box reveal stagger-1">Shopify (Liquid)</div>
+            <div class="skill-box reveal stagger-2">Shopify App Dev</div>
+            <div class="skill-box reveal stagger-3">React</div>
+            <div class="skill-box reveal stagger-4">GraphQL</div>
+            <div class="skill-box reveal stagger-5">JavaScript</div>
+            <div class="skill-box reveal stagger-6">Node.js</div>
+            <div class="skill-box reveal stagger-7">HTML &amp; CSS</div>
+            <div class="skill-box reveal stagger-8">REST APIs</div>
+          </div>
+  
+          <div class="skills-grid">
+            <div class="skill-card reveal stagger-1">
+              <h3>Core Shopify</h3>
+              <ul>
+                <li>Shopify Plus & CLI</li>
+                <li>Advanced Liquid Templating</li>
+                <li>Online Store 2.0 (OS 2.0)</li>
+                <li>Checkout Extensibility</li>
+              </ul>
+            </div>
+            <div class="skill-card reveal stagger-2">
+              <h3>Front-End Architecture</h3>
+              <ul>
+                <li>JavaScript (ES6+) & jQuery</li>
+                <li>HTML5, CSS3, SCSS</li>
+                <li>Vue.js (Interactive UI)</li>
+                <li>JSON Templates & Schema</li>
+              </ul>
+            </div>
+            <div class="skill-card reveal stagger-3">
+              <h3>Advanced Solutions</h3>
+              <ul>
+                <li>Metafields & Metaobjects</li>
+                <li>Platform Migrations (Woo/Magento)</li>
+                <li>Site Speed Optimization (CWV)</li>
+                <li>SEO Structure & 301 Mapping</li>
+              </ul>
+            </div>
+            <div class="skill-card reveal stagger-4">
+              <h3>Current Learning</h3>
+              <ul>
+                <li>React.js & Remix Framework</li>
+                <li>Shopify GraphQL APIs</li>
+                <li>MongoDB</li>
+                <li>Headless Architecture</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section id="experience" class="experience">
+        <div class="container">
+          <h2 class="section-title reveal">Professional Journey</h2>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <span class="company">Revyrie Global</span>
+              <h3 class="job-title">Senior Software Engineer</h3>
+              <span class="date">Jan 2024 - Present</span>
+              <ul class="job-desc">
+                <li>
+                  Spearheaded transition of legacy themes to
+                  <strong>Online Store 2.0</strong>, utilizing Metaobjects for
+                  dynamic content management.
+                </li>
+                <li>
+                  Optimized client stores to achieve
+                  <strong>90+ Mobile PageSpeed</strong> scores via critical CSS
+                  and JS refactoring.
+                </li>
+                <li>
+                  Led code reviews and technical planning for remote agile teams.
+                </li>
+              </ul>
+            </div>
+  
+            <div class="timeline-item reveal">
+              <span class="company">Rootsyntax Technologies</span>
+              <h3 class="job-title">Software Engineer</h3>
+              <span class="date">Sep 2020 - Dec 2023</span>
+              <ul class="job-desc">
+                <li>
+                  Managed end-to-end
+                  <strong>migrations for 15+ large-scale stores</strong> from
+                  WordPress to Shopify with zero data loss.
+                </li>
+                <li>
+                  Implemented complex B2B logic and custom pricing tiers using
+                  Liquid and AJAX.
+                </li>
+                <li>
+                  Acted as primary technical lead for high-value client accounts.
+                </li>
+              </ul>
+            </div>
+  
+            <div class="timeline-item reveal">
+              <span class="company">Tech Striker</span>
+              <h3 class="job-title">Web Developer</h3>
+              <span class="date">Nov 2017 - Aug 2020</span>
+              <ul class="job-desc">
+                <li>
+                  Developed and launched 50+ custom Shopify themes from PSD/Figma
+                  designs.
+                </li>
+                <li>
+                  Integrated third-party payment gateways and troubleshoot webhook
+                  failures.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title reveal">Key Projects</h2>
+          <div class="project-grid">
+            <div class="project-card reveal stagger-1">
+              <div class="project-content">
+                <div class="project-tags">MIGRATION • DATA INTEGRITY</div>
+                <h3 class="project-title">Enterprise Platform Migration</h3>
+                <p class="project-desc">
+                  Executed a zero-downtime migration for a high-volume retailer
+                  moving from WooCommerce to Shopify Plus. Scripted custom data
+                  mapping for 5,000+ SKUs and maintained SEO rankings via
+                  extensive 301 redirects.
+                </p>
+              </div>
+            </div>
+  
+            <div class="project-card reveal stagger-2">
+              <div class="project-content">
+                <div class="project-tags">METAOBJECTS • ARCHITECTURE</div>
+                <h3 class="project-title">Dynamic Recipe System</h3>
+                <p class="project-desc">
+                  Engineered a custom content system using native Shopify
+                  Metaobjects to create relational databases (Recipes linked to
+                  Ingredients/Products) within the admin, saving the client
+                  monthly app fees.
+                </p>
+              </div>
+            </div>
+  
+            <div class="project-card reveal stagger-3">
+              <div class="project-content">
+                <div class="project-tags">PERFORMANCE • LIQUID</div>
+                <h3 class="project-title">Core Web Vitals Overhaul</h3>
+                <p class="project-desc">
+                  Refactored a heavy legacy theme, reducing LCP (Largest
+                  Contentful Paint) from 3.5s to 1.2s and blocking render-blocking
+                  resources, resulting in a 12% uplift in mobile conversion rates.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section id="highlights" class="websites">
+        <div class="container">
+          <h2 class="section-title reveal">Websites I’ve Built</h2>
+  
+          <div class="carousel reveal">
+            <button class="carousel-btn prev" aria-label="Previous slide">
+              ‹
+            </button>
+  
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img
+                  src="./assets/images/websites/twpm.png"
+                  alt="twpclothing"
+                />
+                <h3>Luxury Fashion Store</h3>
+                <p>
+                  Custom Shopify Plus storefront with OS 2.0 architecture,
+                  advanced metafields, and mobile-first performance optimization.
+                </p>
+              </div>
+  
+              <div class="carousel-slide">
+                <img
+                  src="./assets/images/websites/blvck.png"
+                  alt="BLVCK"
+                />
+                <h3>All-Black Luxury Lifestyle</h3>
+                <p>
+                  Crafted a sleek Shopify storefront that reflects its refined 
+                  all-black philosophy through minimalist design, premium aesthetics, and smooth performance.
+                </p>
+              </div>
+  
+              <div class="carousel-slide">
+                <img
+                  src="./assets/images/websites/hellobonafide.png"
+                  alt="hellobonafide"
+                />
+                <h3>Women Health & Wellness Brand</h3>
+                <p>
+                  High-conversion theme with custom sections, recipe metaobjects,
+                  and optimized checkout.
+                </p>
+              </div>
+  
+              <div class="carousel-slide">
+                <img
+                  src="./assets/images/websites/teveo.png"
+                  alt="TEVEO"
+                />
+                <h3>Sportswear Brand</h3>
+                <p>
+                  Performance-focused Shopify build achieving 80+ PageSpeed scores
+                  with lean Liquid and deferred JavaScript.
+                </p>
+              </div>
+  
+              <div class="carousel-slide">
+                <img
+                  src="./assets/images/websites/amlachai.png"
+                  alt="amlachai"
+                />
+                <h3>Indian Authentic Tea Brand</h3>
+                <p>
+                  Built focusing on clean visuals, smooth navigation, and a fast, 
+                  reliable shopping experience
+                </p>
+              </div>
+  
+              <div class="carousel-slide">
+                <img
+                  src="./assets/images/websites/anastasiabeverlyhills.png"
+                  alt="anastasiabeverlyhills"
+                />
+                <h3>Prestige Makeup Brand</h3>
+                <p>
+                  Built and optimized the storefront with a focus on performance, 
+                  precision UI, and a seamless luxury shopping experience
+                </p>
+              </div>
+  
+  
+  
+            </div>
+  
+            <button class="carousel-btn next" aria-label="Next slide">›</button>
+          </div>
+        </div>
+      </section>
+  
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title reveal">Get In Touch</h2>
+          <div class="reveal">
+            <p>
+              Currently open for <strong>Senior Technical Lead</strong> and
+              <strong>Shopify Architect</strong> roles. Let's discuss how I can
+              bring value to your engineering team.
+            </p>
+            <a
+              href="https://forms.gle/3Nj6Sw23pZZKCwTq8"
+              class="btn" target="_blank"
+              >Contact</a
+            >
+            <div style="margin-top: 2rem; color: var(--text-secondary)">
+              <p>📍 <a href="https://www.google.com/maps/place/Paonta+Sahib,+Himachal+Pradesh/" target="_blank">Himachal Pradesh, India</a></p>
+              <p>📞 <a href="tel:917018604721">+91 7018604721</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <div class="container">
