@@ -29,20 +29,6 @@ Every section is built with the same mindset I apply to client projects: underst
 - Minimal, professional UI
 - Easy to extend and maintain
 
-## 📂 Project Structure
-
-```text
-├── assets/
-│   └── favicon/
-│   └── images/
-│     └── websites/
-│   ├── styles/
-│   ├── scripts/
-│   └── videos/
-│
-├── index.html
-
-
 ## 📈 Purpose
 
 This portfolio is designed to:
@@ -56,4 +42,17 @@ If you’d like to collaborate or discuss Shopify projects:
 
 - LinkedIn: [https://linkedin.com/aadrashmehta]  
 - Email: [mailto:mehta.aadrash05@gmail.com]  
+
+## 📂 Project Structure
+
+```text
+├── assets/
+│   └── favicon/
+│   └── images/
+│     └── websites/
+│   ├── styles/
+│   ├── scripts/
+│   └── videos/
+│
+├── index.html
 
