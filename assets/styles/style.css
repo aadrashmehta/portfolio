@@ -454,6 +454,7 @@ header {
 .contact {
   padding: 6rem 0;
   text-align: center;
+  background: var(--bg-secondary);
 }
 .contact p {
   color: var(--text-secondary);
@@ -468,6 +469,7 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   color: var(--text-secondary);
   font-size: 0.9rem;
+  background: var(--bg-secondary);
 }
 
 /* --- RESPONSIVE --- */
